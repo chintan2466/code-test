@@ -1,0 +1,90 @@
+#FillJsonData {
+  padding: 0 2%;
+}
+
+/* Category Part */
+.divCategory {
+  font-size: 14px;
+  text-decoration: none;
+  color: #0059bf;
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  text-align: left;
+  float: left;
+}
+
+/* Headline Part */
+.divHeadline {
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+  font-family: Times New Roman, Times, serif;
+  text-align: left;
+  margin-top: 35px;
+  clear: both;
+}
+
+/* Standfirst Part */
+.divStandfirst {
+  font-size: 16px;
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  color: #606669;
+  text-align: left;
+}
+
+.container {
+  border-bottom: 2px solid #ccc;
+  padding: 16px 0;
+  margin: 16px 0;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: right;
+  max-width: 85% !important;
+  max-height: 55% !important;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .divCategory {
+    font-size: 18px;
+  }
+  .divHeadline {
+    font-size: 31px;
+  }
+  .divStandfirst {
+    font-size: 19px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.maincolumn {
+  float: left;
+  /* padding: 10px 0; */
+}
+
+.columnleft {
+  width: 70%;
+}
+
+.columnright {
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*# sourceMappingURL=index.css.map */

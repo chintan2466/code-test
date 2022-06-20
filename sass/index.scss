@@ -1,0 +1,111 @@
+
+#FillJsonData{
+    padding: 0 2%;
+}
+
+/* Category Part */
+$divCategoryFontSizeA: 14px; 
+$divCategoryFontSizeB: 18px; 
+$divCategoryColor: #0059bf; 
+$divCategoryFontStyle: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; 
+
+.divCategory{
+    font-size: $divCategoryFontSizeA;
+    text-decoration: none;
+    color: $divCategoryColor;
+    font-family: $divCategoryFontStyle;
+    text-decoration: none;
+    text-align: left;
+    float: left;
+}
+
+/* Headline Part */
+$divHeadlineFontSizeA: 24px; 
+$divHeadlineFontSizeB: 31px; 
+$divHeadlineColor: #000000; 
+$divHeadlineFontStyle: Times New Roman,Times,serif; 
+$divHeadlineFontWeight: bold; 
+
+.divHeadline{
+    font-size: $divHeadlineFontSizeA;
+    color: $divHeadlineColor;
+    font-weight: $divHeadlineFontWeight;
+    font-family: $divHeadlineFontStyle;
+    text-align: left;
+    margin-top: 35px;
+    clear: both;
+}
+
+/* Standfirst Part */
+$divStandfirstFontSizeA: 16px; 
+$divStandfirstFontSizeB: 19px; 
+$divStandfirstColor: #606669; 
+$divStandfirstFontStyle: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; 
+
+$divStandfirstFontSize: 16px; 
+.divStandfirst{
+    font-size: $divStandfirstFontSizeA;
+	font-family: $divStandfirstFontStyle;
+    color: $divStandfirstColor ;
+    text-align: left;
+}
+
+
+.container {
+    border-bottom: 2px solid #ccc;
+    padding: 16px 0;
+    margin: 16px 0;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container img {
+    float: right;
+    max-width: 85% !important;
+    max-height: 55%  !important;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+    
+    .divCategory{
+        font-size: $divCategoryFontSizeB;
+    }
+    .divHeadline{
+        font-size: $divHeadlineFontSizeB;
+    }
+    .divStandfirst{
+        font-size: $divStandfirstFontSizeB;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  /* Create two unequal columns that floats next to each other */
+  .maincolumn {
+    float: left;
+    /* padding: 10px 0; */
+  }
+  
+  .columnleft {
+    width: 70%;
+  }
+  
+  .columnright {
+    width: 30%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
