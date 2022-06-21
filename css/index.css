@@ -46,12 +46,11 @@
 
 .container img {
   float: right;
-  max-width: 85% !important;
-  max-height: 55% !important;
+  max-width: 85%;
+  max-height: 55%;
 }
 
-/* Add media queries for responsiveness. This will center both the text and the image inside the container */
-@media (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .divCategory {
     font-size: 18px;
   }
@@ -69,7 +68,6 @@
 /* Create two unequal columns that floats next to each other */
 .maincolumn {
   float: left;
-  /* padding: 10px 0; */
 }
 
 .columnleft {
@@ -78,13 +76,6 @@
 
 .columnright {
   width: 30%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /*# sourceMappingURL=index.css.map */

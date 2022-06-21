@@ -65,8 +65,8 @@ $divStandfirstFontSize: 16px;
 
 .container img {
     float: right;
-    max-width: 85% !important;
-    max-height: 55%  !important;
+    max-width: 85%;
+    max-height: 55%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -91,7 +91,6 @@ $divStandfirstFontSize: 16px;
   /* Create two unequal columns that floats next to each other */
   .maincolumn {
     float: left;
-    /* padding: 10px 0; */
   }
   
   .columnleft {
@@ -102,9 +101,3 @@ $divStandfirstFontSize: 16px;
     width: 30%;
   }
   
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
